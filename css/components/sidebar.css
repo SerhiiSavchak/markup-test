@@ -1,0 +1,134 @@
+.sidebar-section {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 306px;
+  height: auto;
+  padding: 36px 28px 76px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-logo-wrap {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  width: fit-content;
+  margin-bottom: 64px;
+  cursor: pointer;
+}
+
+.sidebar-logo {
+  width: 37px;
+  height: 37px;
+}
+
+.sidebar-logo-text {
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  color: #000;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.sidebar-logo-span {
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  color: #838383;
+  font-weight: 500;
+}
+
+.sidebar-list {
+  width: 250px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 597px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 46px;
+  padding: 11px 8px 8px 11px;
+  gap: 14px;
+  position: relative;
+  transition: all 0.1s var(--cubic);
+  cursor: pointer;
+}
+
+.sidebar-item.active-bar {
+  background-color: #5932ea;
+}
+
+.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.1s var(--cubic);
+  fill: #9197b3;
+}
+
+.sidebar-item.active-bar .sidebar-icon {
+  fill: #fff;
+}
+
+.sidebar-icon-triangle {
+  width: 16px;
+  height: 16px;
+  stroke: #9197b3;
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  transition: all 0.1s var(--cubic);
+}
+
+.sidebar-item.active-bar .sidebar-icon-triangle {
+  stroke: #fff;
+}
+
+.sidebar-text {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #9197b3;
+  font-weight: 500;
+}
+
+.sidebar-item.active-bar .sidebar-text {
+  transition: all 0.1s var(--cubic);
+  color: #fff;
+}
+
+.sidebar-bottom-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.sidebar-bottom-img {
+  width: 42px;
+  height: 42px;
+}
+.sidebar-bottom-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-bottom-name {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  color: #000;
+}
+
+.sidebar-bottom-role {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
