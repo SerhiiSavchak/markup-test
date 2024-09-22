@@ -44,8 +44,7 @@ button {
 .container {
   width: 1440px;
   margin: 0 auto;
-  padding: 0;
-  position: relative;
+  padding: 0 95px 0 377px;
 }
 
 .sidebar-logo-wrap {
@@ -114,7 +113,7 @@ button {
   cursor: pointer;
 }
 
-.sidebar-item:is(:hover, :focus) {
+.sidebar-item.active-bar {
   background-color: #5932ea;
 }
 
@@ -125,7 +124,7 @@ button {
   fill: #9197b3;
 }
 
-.sidebar-item:is(:hover, :focus) .sidebar-icon {
+.sidebar-item.active-bar .sidebar-icon {
   fill: #fff;
 }
 
@@ -139,7 +138,7 @@ button {
   transition: all 0.1s var(--cubic);
 }
 
-.sidebar-item:is(:hover, :focus) .sidebar-icon-triangle {
+.sidebar-item.active-bar .sidebar-icon-triangle {
   stroke: #fff;
 }
 
@@ -150,7 +149,7 @@ button {
   font-weight: 500;
 }
 
-.sidebar-item:is(:hover, :focus) .sidebar-text {
+.sidebar-item.active-bar .sidebar-text {
   transition: all 0.1s var(--cubic);
   color: #fff;
 }
@@ -194,7 +193,6 @@ button {
 
 .customers-main-wrap {
   width: 968px;
-  height: 812px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   position: absolute;
   top: 128px;
@@ -224,7 +222,7 @@ button {
   color: #000;
   height: 33px;
 }
-.customers-text {
+.customers-top-text {
   font-size: 14px;
   letter-spacing: -0.01em;
   color: #16c098;
@@ -258,42 +256,6 @@ button {
   color: #b5b7c0;
 }
 
-.customers-table {
-  width: 886px;
-  border-collapse: collapse;
-  margin: 0 auto;
-  font-weight: 500;
-}
-
-.customers-table > thead {
-  padding-bottom: 14px;
-}
-
-.customers-table > thead tr {
-}
-
-.customers-table > thead td {
-  font-size: 14px;
-  letter-spacing: -0.01em;
-  color: #b5b7c0;
-  padding: unset;
-  padding-bottom: 14px;
-}
-
-.customers-table > tbody tr {
-  font-size: 14px;
-  letter-spacing: -0.01em;
-  color: #292d32;
-}
-
-.customers-table td {
-  padding: 20px 0px;
-}
-
-.customers-table tr {
-  border-bottom: 1px solid #eee;
-}
-
 .customers-status {
   border-radius: 4px;
   padding: 4px 12px;
@@ -302,6 +264,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .active {
@@ -314,4 +277,129 @@ button {
   color: #df0404;
   background-color: #ffc5c5;
   border: 1px solid #df0404;
+}
+
+.customers-line {
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background-color: #eee;
+  top: 156px;
+  left: 0px;
+}
+
+.customers-table {
+  width: 886px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.customers-table > thead {
+  padding-bottom: 14px;
+}
+
+.customers-table > thead tr,
+.customers-table > tfoot tr {
+  border: unset;
+}
+
+.customers-table > thead td {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+  padding: unset;
+  padding-bottom: 14px;
+}
+
+.customers-table > thead td:nth-child(1) {
+  width: 172px;
+}
+.customers-table > thead td:nth-child(2) {
+  width: 131px;
+}
+.customers-table > thead td:nth-child(3) {
+  width: 156px;
+}
+.customers-table > thead td:nth-child(4) {
+  width: 207px;
+}
+.customers-table > thead td:nth-child(5) {
+  width: 152px;
+}
+
+.customers-table > thead td > p {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.customers-table > tbody tr {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #292d32;
+}
+
+.customers-table td {
+  padding: 20px 0px;
+}
+
+.customers-table > tfoot td {
+  padding: unset;
+  padding-top: 53px;
+}
+
+.customers-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.customers-table > tfoot {
+  position: relative;
+}
+
+.customers-text {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+  position: absolute;
+  top: 32px;
+  left: 0;
+}
+
+.customers-bottom-list {
+  display: flex;
+  align-items: center;
+  width: 271px;
+  justify-content: space-between;
+  height: 24px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+.customers-bottom-item {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 6px 9px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.customers-bottom-text {
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #404b52;
+}
+
+.current {
+  background-color: #5932ea;
+  border-color: #5932ea;
+}
+
+.customers-bottom-text.current {
+  color: #fff;
 }

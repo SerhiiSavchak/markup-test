@@ -29,8 +29,7 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="sidebar">
+		    <div class="sidebar">
           <div class="sidebar-logo-wrap">
             <svg class="sidebar-logo">
               <use href="./images/sprite/icons.svg#icon-logo"></use>
@@ -59,7 +58,7 @@
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item active-bar">
               <svg class="sidebar-icon">
                 <use href="./images/sprite/icons.svg#icon-list-3"></use>
               </svg>
@@ -108,12 +107,15 @@
             </div>
           </div>
         </div>
+      <div class="container">
+    
         <p class="welcome-text">Hello Evano 👋🏼,</p>
         <div class="customers-main-wrap">
+			<div class="customers-line"></div>
           <div class="customers-top-wrap">
             <div class="customers-title-wrap">
               <h2 class="customers-title">All Customers</h2>
-              <p class="customers-text">Active Members</p>
+              <p class="customers-top-text">Active Members</p>
             </div>
             <div class="customers-search-wrap">
               <svg class="customers-search-icon">
@@ -134,7 +136,7 @@
       <td>Phone Number</td>
       <td>Email</td>
       <td>Country</td>
-      <td>Status</td>
+      <td><p>Status</p></td>
     </tr>
   </thead>
   <tbody>
@@ -208,8 +210,18 @@
   </tbody>
   <tfoot>
     <tr>
-    
-   
+    <td><p class="customers-text">Showing data 1 to 8 of  256K entries</p>
+	<ul class="customers-bottom-list">
+		<li class="customers-bottom-item"><p class="customers-bottom-text"><</p></li>
+		<li class="customers-bottom-item current"><p class="customers-bottom-text current">1</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">2</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">3</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">4</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">...</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">40</p></li>
+		<li class="customers-bottom-item"><p class="customers-bottom-text">></p></li>
+	</ul>
+	</td>
     </tr>
   </tfoot></table>
             </li>
