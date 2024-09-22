@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Logo -->
+    <link rel="icon" href="/images/logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <div class="sidebar-logo-wrap">
+            <svg class="sidebar-logo">
+              <use href="./images/sprite/icons.svg#icon-logo"></use>
+            </svg>
+            <p class="sidebar-logo-text">
+              Dashboard
+              <span class="sidebar-logo-span">v.01</span>
+            </p>
+          </div>
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-1"></use>
+              </svg>
+              <p class="sidebar-text">Dashboard</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-2"></use>
+              </svg>
+              <p class="sidebar-text">Product</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-3"></use>
+              </svg>
+              <p class="sidebar-text">Customers</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-4"></use>
+              </svg>
+              <p class="sidebar-text">Income</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-5"></use>
+              </svg>
+              <p class="sidebar-text">Promote</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+            <li class="sidebar-item">
+              <svg class="sidebar-icon">
+                <use href="./images/sprite/icons.svg#icon-list-6	"></use>
+              </svg>
+              <p class="sidebar-text">Help</p>
+              <svg class="sidebar-icon-triangle">
+                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="sidebar-bottom-wrap">
+            <img
+              class="sidebar-bottom-img"
+              src="./images/user.png"
+              alt="user-avatar"
+            />
+            <div class="sidebar-bottom-text-wrap">
+              <p class="sidebar-bottom-name">Evano</p>
+              <p class="sidebar-bottom-role">Project Manager</p>
+            </div>
+          </div>
+        </div>
+        <p class="welcome-text">Hello Evano 👋🏼,</p>
+        <div class="customers-main-wrap">
+          <div class="customers-top-wrap">
+            <div class="customers-title-wrap">
+              <h2 class="customers-title">All Customers</h2>
+              <p class="customers-text">Active Members</p>
+            </div>
+            <div class="customers-search-wrap">
+              <svg class="customers-search-icon">
+                <use href="./images/sprite/icons.svg#icon-search"></use></svg
+              ><input
+                class="customers-search-input"
+                type="text"
+                name="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        <table class="customers-table">  
+			<thead>
+    <tr>
+      <td>Customer Name</td>
+      <td>Company</td>
+      <td>Phone Number</td>
+      <td>Email</td>
+      <td>Country</td>
+      <td>Status</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jane Cooper</td>
+      <td>Microsoft</td>
+      <td>(225) 555-0118</td>
+      <td>jane@microsoft.com</td>
+      <td>United States</td>
+      <td ><p class="customers-status active">Active</p></td>
+    </tr>
+     <tr>
+      <td>Floyd Miles</td>
+      <td>Yahoo</td>
+      <td>(205) 555-0100</td>
+      <td>floyd@yahoo.com</td>
+      <td>Kiribati</td>
+
+		      <td ><p class="customers-status inactive">Inactive</p></td>
+    </tr>
+	      <tr>
+      <td>Ronald Richards</td>
+      <td>Adobe</td>
+      <td>(302) 555-0107</td>
+      <td>ronald@adobe.com</td>
+      <td>Israel</td>
+
+		      <td ><p class="customers-status inactive">Inactive</p></td>
+    </tr>
+	 	      <tr>
+      <td>Marvin McKinney</td>
+      <td>Tesla</td>
+      <td>(252) 555-0126</td>
+      <td>marvin@tesla.com</td>
+      <td>Iran</td>
+      <td ><p class="customers-status active">Active</p></td>
+    </tr>
+	 	      <tr>
+      <td>Jerome Bell</td>
+      <td>Google</td>
+      <td>(629) 555-0129</td>
+      <td>jerome@google.com</td>
+      <td>Réunion</td>
+      <td ><p class="customers-status active">Active</p></td>
+    </tr>
+	 	      <tr>
+      <td>Kathryn Murphy</td>
+      <td>Microsoft</td>
+      <td>(406) 555-0120</td>
+      <td>kathryn@microsoft.com</td>
+      <td>Curaçao</td>
+       <td ><p class="customers-status active">Active</p></td>
+    </tr>
+	 	      <tr>
+      <td>Jacob Jones</td>
+      <td>Yahoo</td>
+      <td>(208) 555-0112</td>
+      <td>jacob@yahoo.com</td>
+      <td>Brazil</td>
+      <td ><p class="customers-status active">Active</p></td>
+    </tr>
+	 	      <tr>
+      <td>Kristin Watson</td>
+      <td>Facebook</td>
+      <td>(704) 555-0127</td>
+      <td>kristin@facebook.com</td>
+      <td>Åland Islands</td>
+  
+		      <td ><p class="customers-status inactive">Inactive</p></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+    
+   
+    </tr>
+  </tfoot></table>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- Script js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
