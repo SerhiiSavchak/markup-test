@@ -59,8 +59,8 @@
   padding: 11px 8px 8px 11px;
   gap: 14px;
   position: relative;
-  transition: all 0.1s var(--cubic);
   cursor: pointer;
+  transition: background-color 0.1s var(--cubic);
 }
 
 .sidebar-item.active-bar {
@@ -70,8 +70,8 @@
 .sidebar-icon {
   width: 24px;
   height: 24px;
-  transition: all 0.1s var(--cubic);
   fill: #9197b3;
+  transition: fill 0.1s var(--cubic);
 }
 
 .sidebar-item.active-bar .sidebar-icon {
@@ -85,7 +85,7 @@
   position: absolute;
   right: 8px;
   top: 16px;
-  transition: all 0.1s var(--cubic);
+  transition: stroke 0.1s var(--cubic);
 }
 
 .sidebar-item.active-bar .sidebar-icon-triangle {
@@ -100,7 +100,7 @@
 }
 
 .sidebar-item.active-bar .sidebar-text {
-  transition: all 0.1s var(--cubic);
+  transition: color 0.1s var(--cubic);
   color: #fff;
 }
 
