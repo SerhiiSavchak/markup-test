@@ -3,6 +3,10 @@
   z-index: 1000;
   top: 0;
   left: 0;
+  opacity: 0;
+  height: 0px;
+  visibility: hidden;
+  transition: opacity 0.2s var(--cubic);
 }
 
 .sidebar__wrapper {
@@ -11,15 +15,12 @@
   height: 100%;
   padding: 36px 28px 76px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  display: none;
-  opacity: 0;
-  visibility: hidden;
 }
 
-.sidebar__wrapper.is-open {
+.sidebar.is-open {
   opacity: 1;
   visibility: visible;
-  display: block;
+  height: auto;
 }
 
 .sidebar__btn-close {
@@ -164,10 +165,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .sidebar__wrapper {
+  .sidebar {
     opacity: 1;
     visibility: visible;
-    display: block;
+    height: auto;
   }
 
   .sidebar__btn-close {

@@ -1,14 +1,28 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector("[data-sidebar-open]"),
-    closeMenuBtn: document.querySelector("[data-sidebar-close]"),
-    menu: document.querySelector("[data-sidebar]"),
+    openSidebarBtn: document.querySelector("[data-sidebar-open]"),
+    closeSidebarBtn: document.querySelector("[data-sidebar-close]"),
+    sidebar: document.querySelector("[data-sidebar]"),
+    customers: document.querySelector("[data-customers]"),
   };
 
-  refs.openMenuBtn.addEventListener("click", toggleModal);
-  refs.closeMenuBtn.addEventListener("click", toggleModal);
+  // Плавная анимация компонентов при загрузке
+  function showComponents() {
+    refs.customers.classList.add("visible");
+
+    // Убираем класс hidden после анимации
+    setTimeout(() => {
+      refs.customers.classList.remove("hidden");
+    }, 500);
+  }
+
+  window.addEventListener("load", showComponents);
+
+  // Управление открытием/закрытием Sidebar по клику
+  refs.openSidebarBtn.addEventListener("click", toggleModal);
+  refs.closeSidebarBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.menu.classList.toggle("is-open");
+    refs.sidebar.classList.toggle("is-open");
   }
 })();
