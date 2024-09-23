@@ -13,6 +13,7 @@
 
 .customers-main-wrap {
   width: 100%;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   position: relative;
   background-color: #fff;
@@ -183,7 +184,7 @@
   color: #b5b7c0;
   position: absolute;
   left: 38px;
-  bottom: 40px;
+  bottom: 69px;
 }
 
 .customers-bottom-list {
@@ -193,8 +194,8 @@
   justify-content: space-between;
   height: 24px;
   position: absolute;
-  right: 38px;
-  bottom: 40px;
+  left: 28px;
+  bottom: 23px;
 }
 
 .customers-bottom-item {
@@ -262,5 +263,16 @@
 
   .customers-search-input {
     width: 216px;
+  }
+
+  .customers-text {
+    left: 38px;
+    bottom: 40px;
+  }
+
+  .customers-bottom-list {
+    right: 38px;
+    bottom: 40px;
+    left: unset;
   }
 }
