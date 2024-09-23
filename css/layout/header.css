@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  position: absolute;
+  height: fit-content;
+  z-index: 1000;
+  padding: 20px 0px;
+}
+
+.header-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+}

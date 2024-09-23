@@ -173,4 +173,8 @@
   .sidebar-btn-close {
     display: none;
   }
+
+  .sidebar-list {
+    margin-bottom: 597px;
+  }
 }
