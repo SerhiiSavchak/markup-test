@@ -1,5 +1,16 @@
 :root {
-  --gray-main: #fafbff;
+  --white-main: #fff;
+  --black-main: #000;
+  --blue-main: #5932ea;
+  --green-main: #16c098;
+  --green-second: #008767;
+  --green-third: #00b087;
+  --gray-main: #9197b3;
+  --gray-second: #838383;
+  --gray-third: #757575;
+  --gray-fourth: #b5b7c0;
+  --red-main: #df0404;
+  --red-second: #ffc5c5;
 
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }

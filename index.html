@@ -31,127 +31,125 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <button class="header-btn" data-sidebar-open>
-          <svg class="header-icon">
+        <button class="header__btn" data-sidebar-open>
+          <svg class="header__icon">
             <use href="./images/sprite/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
     </header>
-    <!-- Header -->
 
     <main>
       <!-- Sidebar -->
-      <section class="sidebar-section">
-        <div class="sidebar" data-sidebar>
-          <button class="sidebar-btn-close" data-sidebar-close>
-            <svg class="sidebar-icon-close">
+      <section class="sidebar">
+        <div class="sidebar__wrapper" data-sidebar>
+          <button class="sidebar__btn-close" data-sidebar-close>
+            <svg class="sidebar__icon-close">
               <use href="./images/sprite/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="sidebar-logo-wrap">
-            <svg class="sidebar-logo">
+          <div class="sidebar__logo-wrap">
+            <svg class="sidebar__logo">
               <use href="./images/sprite/icons.svg#icon-logo"></use>
             </svg>
-            <p class="sidebar-logo-text">
+            <p class="sidebar__logo-text">
               Dashboard
-              <span class="sidebar-logo-span">v.01</span>
+              <span class="sidebar__logo-span">v.01</span>
             </p>
           </div>
-          <ul class="sidebar-list">
-            <li class="sidebar-item">
-              <svg class="sidebar-icon">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-1"></use>
               </svg>
-              <p class="sidebar-text">Dashboard</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Dashboard</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item">
-              <svg class="sidebar-icon">
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-2"></use>
               </svg>
-              <p class="sidebar-text">Product</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Product</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item active-bar">
-              <svg class="sidebar-icon">
+            <li class="sidebar__item active-bar">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-3"></use>
               </svg>
-              <p class="sidebar-text">Customers</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Customers</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item">
-              <svg class="sidebar-icon">
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-4"></use>
               </svg>
-              <p class="sidebar-text">Income</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Income</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item">
-              <svg class="sidebar-icon">
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-5"></use>
               </svg>
-              <p class="sidebar-text">Promote</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Promote</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
-            <li class="sidebar-item">
-              <svg class="sidebar-icon">
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
                 <use href="./images/sprite/icons.svg#icon-list-6"></use>
               </svg>
-              <p class="sidebar-text">Help</p>
-              <svg class="sidebar-icon-triangle">
+              <p class="sidebar__text">Help</p>
+              <svg class="sidebar__icon-triangle">
                 <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
               </svg>
             </li>
           </ul>
-          <div class="sidebar-bottom-wrap">
+          <div class="sidebar__bottom">
             <img
-              class="sidebar-bottom-img"
+              class="sidebar__bottom-img"
               src="./images/user.png"
               alt="user-avatar"
             />
-            <div class="sidebar-bottom-text-wrap">
-              <p class="sidebar-bottom-name">Evano</p>
-              <p class="sidebar-bottom-role">Project Manager</p>
+            <div class="sidebar__bottom-text">
+              <p class="sidebar__bottom-name">Evano</p>
+              <p class="sidebar__bottom-role">Project Manager</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Sidebar -->
 
       <!-- Customers -->
-      <section class="customers-section">
+      <section class="customers">
         <div class="container">
-          <p class="customers-welcome-text">Hello Evano &#128075;&#127996;,</p>
-          <div class="customers-main-wrap">
-            <div class="customers-line"></div>
-            <div class="customers-top-wrap">
-              <div class="customers-title-wrap">
-                <h2 class="customers-title">All Customers</h2>
-                <p class="customers-top-text">Active Members</p>
+          <p class="customers__welcome">Hello Evano &#128075;&#127996;,</p>
+          <div class="customers__main">
+            <div class="customers__line"></div>
+            <div class="customers__top">
+              <div class="customers__title-wrap">
+                <h2 class="customers__title">All Customers</h2>
+                <p class="customers__top-text">Active Members</p>
               </div>
-              <div class="customers-search-wrap">
-                <svg class="customers-search-icon">
+              <div class="customers__search">
+                <svg class="customers__search-icon">
                   <use href="./images/sprite/icons.svg#icon-search"></use></svg
                 ><input
-                  class="customers-search-input"
+                  class="customers__search-input"
                   type="text"
                   name="text"
                   placeholder="Search"
                 />
               </div>
             </div>
-            <table class="customers-table">
+            <table class="customers__table">
               <thead>
                 <tr>
                   <td>Customer Name</td>
@@ -166,101 +164,150 @@
                 <tr>
                   <td>Jane Cooper</td>
                   <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
+                  <td>
+                    <a href="tel:+2255550118">(225) 555-0118</a>
+                  </td>
+                  <td>
+                    <a href="mailto:jane@microsoft.com">jane@microsoft.com</a>
+                  </td>
                   <td>United States</td>
-                  <td><p class="customers-status active">Active</p></td>
+                  <td>
+                    <p class="customers__status active">Active</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Floyd Miles</td>
                   <td>Yahoo</td>
-                  <td>(205) 555-0100</td>
-                  <td>floyd@yahoo.com</td>
+                  <td>
+                    <a href="tel:+2055550100">(205) 555-0100</a>
+                  </td>
+                  <td>
+                    <a href="mailto:floyd@yahoo.com">floyd@yahoo.com</a>
+                  </td>
                   <td>Kiribati</td>
-
-                  <td><p class="customers-status inactive">Inactive</p></td>
+                  <td>
+                    <p class="customers__status inactive">Inactive</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Ronald Richards</td>
                   <td>Adobe</td>
-                  <td>(302) 555-0107</td>
-                  <td>ronald@adobe.com</td>
+                  <td>
+                    <a href="tel:+3025550107">(302) 555-0107</a>
+                  </td>
+                  <td>
+                    <a href="mailto:ronald@adobe.com">ronald@adobe.com</a>
+                  </td>
                   <td>Israel</td>
-
-                  <td><p class="customers-status inactive">Inactive</p></td>
+                  <td>
+                    <p class="customers__status inactive">Inactive</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Marvin McKinney</td>
                   <td>Tesla</td>
-                  <td>(252) 555-0126</td>
-                  <td>marvin@tesla.com</td>
+                  <td>
+                    <a href="tel:+2525550126">(252) 555-0126</a>
+                  </td>
+                  <td>
+                    <a href="mailto:marvin@tesla.com">marvin@tesla.com</a>
+                  </td>
                   <td>Iran</td>
-                  <td><p class="customers-status active">Active</p></td>
+                  <td>
+                    <p class="customers__status active">Active</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Jerome Bell</td>
                   <td>Google</td>
-                  <td>(629) 555-0129</td>
-                  <td>jerome@google.com</td>
+                  <td>
+                    <a href="tel:+6295550129">(629) 555-0129</a>
+                  </td>
+                  <td>
+                    <a href="mailto:jerome@google.com">jerome@google.com</a>
+                  </td>
                   <td>Réunion</td>
-                  <td><p class="customers-status active">Active</p></td>
+                  <td>
+                    <p class="customers__status active">Active</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Kathryn Murphy</td>
                   <td>Microsoft</td>
-                  <td>(406) 555-0120</td>
-                  <td>kathryn@microsoft.com</td>
+                  <td>
+                    <a href="tel:+4065550120">(406) 555-0120</a>
+                  </td>
+                  <td>
+                    <a href="mailto:kathryn@microsoft.com"
+                      >kathryn@microsoft.com</a
+                    >
+                  </td>
                   <td>Curaçao</td>
-                  <td><p class="customers-status active">Active</p></td>
+                  <td>
+                    <p class="customers__status active">Active</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Jacob Jones</td>
                   <td>Yahoo</td>
-                  <td>(208) 555-0112</td>
-                  <td>jacob@yahoo.com</td>
+                  <td>
+                    <a href="tel:+2085550112">(208) 555-0112</a>
+                  </td>
+                  <td>
+                    <a href="mailto:jacob@yahoo.com">jacob@yahoo.com</a>
+                  </td>
                   <td>Brazil</td>
-                  <td><p class="customers-status active">Active</p></td>
+                  <td>
+                    <p class="customers__status active">Active</p>
+                  </td>
                 </tr>
                 <tr>
                   <td>Kristin Watson</td>
                   <td>Facebook</td>
-                  <td>(704) 555-0127</td>
-                  <td>kristin@facebook.com</td>
+                  <td>
+                    <a href="tel:+7045550127">(704) 555-0127</a>
+                  </td>
+                  <td>
+                    <a href="mailto:kristin@facebook.com"
+                      >kristin@facebook.com</a
+                    >
+                  </td>
                   <td>Åland Islands</td>
-
-                  <td><p class="customers-status inactive">Inactive</p></td>
+                  <td>
+                    <p class="customers__status inactive">Inactive</p>
+                  </td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>
-                    <p class="customers-text">
+                    <p class="customers__text">
                       Showing data 1 to 8 of 256K entries
                     </p>
-                    <ul class="customers-bottom-list">
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">&#60;</p>
+                    <ul class="customers__list">
+                      <li class="customers__item">
+                        <p class="customers__item-text">&#60;</p>
                       </li>
-                      <li class="customers-bottom-item current">
-                        <p class="customers-bottom-text current">1</p>
+                      <li class="customers__item current">
+                        <p class="customers__item-text current">1</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">2</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">2</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">3</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">3</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">4</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">4</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">...</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">...</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">40</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">40</p>
                       </li>
-                      <li class="customers-bottom-item">
-                        <p class="customers-bottom-text">&#62;</p>
+                      <li class="customers__item">
+                        <p class="customers__item-text">&#62;</p>
                       </li>
                     </ul>
                   </td>
@@ -270,7 +317,6 @@
           </div>
         </div>
       </section>
-      <!-- Customers -->
     </main>
     <!-- Script js -->
     <script src="./js/index.js"></script>

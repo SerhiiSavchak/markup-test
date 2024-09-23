@@ -6,7 +6,7 @@
   padding: 20px 0px;
 }
 
-.header-btn {
+.header__btn {
   background-color: transparent;
   outline: none;
   border: none;
@@ -15,7 +15,7 @@
   justify-content: center;
 }
 
-.header-icon {
+.header__icon {
   height: 30px;
   width: 30px;
 }
