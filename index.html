@@ -31,7 +31,12 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <button type="button" class="header__btn" data-sidebar-open>
+        <button
+          type="button"
+          class="header__btn"
+          data-sidebar-open
+          aria-label="Open sidebar"
+        >
           <svg class="header__icon">
             <use href="./images/sprite/icons.svg#icon-burger"></use>
           </svg>
@@ -43,7 +48,12 @@
       <!-- Sidebar -->
       <section class="sidebar" data-sidebar>
         <div class="sidebar__wrapper">
-          <button type="button" class="sidebar__btn-close" data-sidebar-close>
+          <button
+            type="button"
+            class="sidebar__btn-close"
+            data-sidebar-close
+            aria-label="Close sidebar"
+          >
             <svg class="sidebar__icon-close">
               <use href="./images/sprite/icons.svg#icon-close"></use>
             </svg>
@@ -57,62 +67,76 @@
               <span class="sidebar__logo-span">v.01</span>
             </p>
           </div>
-          <ul class="sidebar__list">
-            <li class="sidebar__item">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-1"></use>
-              </svg>
-              <p class="sidebar__text">Dashboard</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-            <li class="sidebar__item">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-2"></use>
-              </svg>
-              <p class="sidebar__text">Product</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-            <li class="sidebar__item active-bar">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-3"></use>
-              </svg>
-              <p class="sidebar__text">Customers</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-            <li class="sidebar__item">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-4"></use>
-              </svg>
-              <p class="sidebar__text">Income</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-            <li class="sidebar__item">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-5"></use>
-              </svg>
-              <p class="sidebar__text">Promote</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-            <li class="sidebar__item">
-              <svg class="sidebar__icon">
-                <use href="./images/sprite/icons.svg#icon-list-6"></use>
-              </svg>
-              <p class="sidebar__text">Help</p>
-              <svg class="sidebar__icon-triangle">
-                <use href="./images/sprite/icons.svg#icon-triangle-right"></use>
-              </svg>
-            </li>
-          </ul>
+          <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-1"></use>
+                </svg>
+                <p class="sidebar__text">Dashboard</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-2"></use>
+                </svg>
+                <p class="sidebar__text">Product</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+              <li class="sidebar__item active-bar">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-3"></use>
+                </svg>
+                <p class="sidebar__text">Customers</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-4"></use>
+                </svg>
+                <p class="sidebar__text">Income</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-5"></use>
+                </svg>
+                <p class="sidebar__text">Promote</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__icon">
+                  <use href="./images/sprite/icons.svg#icon-list-6"></use>
+                </svg>
+                <p class="sidebar__text">Help</p>
+                <svg class="sidebar__icon-triangle">
+                  <use
+                    href="./images/sprite/icons.svg#icon-triangle-right"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </nav>
           <div class="sidebar__bottom">
             <img
               class="sidebar__bottom-img"
@@ -286,28 +310,47 @@
                     </p>
                     <ul class="customers__list">
                       <li class="customers__item">
-                        <p class="customers__item-text">&#60;</p>
+                        <button type="button" class="customers__item-btn">
+                          &#60;
+                        </button>
                       </li>
                       <li class="customers__item current">
-                        <p class="customers__item-text current">1</p>
+                        <button
+                          type="button"
+                          class="customers__item-btn current"
+                        >
+                          1
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">2</p>
+                        <button type="button" class="customers__item-btn">
+                          2
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">3</p>
+                        <button type="button" class="customers__item-btn">
+                          3
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">4</p>
+                        <button type="button" class="customers__item-btn">
+                          4
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">...</p>
+                        <button type="button" class="customers__item-btn">
+                          ...
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">40</p>
+                        <button type="button" class="customers__item-btn">
+                          40
+                        </button>
                       </li>
                       <li class="customers__item">
-                        <p class="customers__item-text">&#62;</p>
+                        <button type="button" class="customers__item-btn">
+                          &#62;
+                        </button>
                       </li>
                     </ul>
                   </td>

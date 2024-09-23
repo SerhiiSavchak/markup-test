@@ -72,13 +72,16 @@
   font-weight: 500;
 }
 
+.sidebar__nav {
+  margin-bottom: 597px;
+}
+
 .sidebar__list {
   width: 250px;
   gap: 2px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 597px;
 }
 
 .sidebar__item {
@@ -173,9 +176,5 @@
 
   .sidebar__btn-close {
     display: none;
-  }
-
-  .sidebar__list {
-    margin-bottom: 597px;
   }
 }
