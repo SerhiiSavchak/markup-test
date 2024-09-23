@@ -8,9 +8,38 @@
 .sidebar {
   background-color: #fff;
   width: 306px;
-  height: auto;
+  height: 100%;
   padding: 36px 28px 76px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar.is-open {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.sidebar-btn-close {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+}
+
+.sidebar-icon-close {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: #000;
 }
 
 .sidebar-logo-wrap {
@@ -114,6 +143,7 @@
   width: 42px;
   height: 42px;
 }
+
 .sidebar-bottom-text-wrap {
   display: flex;
   flex-direction: column;
@@ -131,4 +161,16 @@
   font-size: 12px;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+@media screen and (min-width: 1440px) {
+  .sidebar {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+
+  .sidebar-btn-close {
+    display: none;
+  }
 }

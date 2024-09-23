@@ -28,9 +28,24 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <button class="header-btn" data-sidebar-open>
+          <svg class="header-icon">
+            <use href="./images/sprite/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main>
+      <!-- Sidebar -->
       <section class="sidebar-section">
-        <div class="sidebar">
+        <div class="sidebar" data-sidebar>
+          <button class="sidebar-btn-close" data-sidebar-close>
+            <svg class="sidebar-icon-close">
+              <use href="./images/sprite/icons.svg#icon-close"></use>
+            </svg>
+          </button>
           <div class="sidebar-logo-wrap">
             <svg class="sidebar-logo">
               <use href="./images/sprite/icons.svg#icon-logo"></use>
@@ -109,6 +124,9 @@
           </div>
         </div>
       </section>
+      <!-- Sidebar -->
+
+      <!-- Customers -->
       <section class="customers-section">
         <div class="container">
           <p class="customers-welcome-text">Hello Evano &#128075;&#127996;,</p>
@@ -249,6 +267,7 @@
           </div>
         </div>
       </section>
+      <!-- Customers -->
     </main>
     <!-- Script js -->
     <script src="./js/index.js"></script>
