@@ -167,7 +167,7 @@
 
 .customers-table > tfoot td {
   padding: unset;
-  padding-top: 53px;
+  height: 53px;
 }
 
 .customers-table tr {
@@ -175,7 +175,6 @@
 }
 
 .customers-table > tfoot {
-  position: relative;
 }
 
 .customers-text {
@@ -183,8 +182,8 @@
   letter-spacing: -0.01em;
   color: #b5b7c0;
   position: absolute;
-  top: 32px;
-  left: 0;
+  left: 38px;
+  bottom: 40px;
 }
 
 .customers-bottom-list {
@@ -194,8 +193,8 @@
   justify-content: space-between;
   height: 24px;
   position: absolute;
-  top: 30px;
-  right: 0px;
+  right: 38px;
+  bottom: 40px;
 }
 
 .customers-bottom-item {
